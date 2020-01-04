@@ -14,11 +14,14 @@ import Contact from './Contact';
     render() {
         const { contacts } = this.state;
         return (
-            <div>
+            // Replacing Div element with React.Fragment as we do not need extra div inside the contacts element
+            // to do so we are using React.Fragment
+            <React.Fragment>
                 { contacts.map(contact => (
                     <Contact key={contact.id} contact={contact} />
                 ))}
-            </div>
+                
+            </React.Fragment>
         )
     }
 }

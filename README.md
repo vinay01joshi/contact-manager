@@ -5,4 +5,5 @@ This project is a getting started for the React named as Contact Manager.
  - Bootstrap `npm install bootstrap`
  - uuid `npm install uuid` 
     this package use to generate unique identifier inside the collection
-
+ - classnames `npm install classnames`
+    this package use for adding conditional css classes in the html element easily

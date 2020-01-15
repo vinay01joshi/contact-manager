@@ -46,7 +46,17 @@ class EditContact extends Component {
                 phone : 'Phone is required'
             }})
             return;
-        }        
+        }
+        
+        const updatedContact = {
+            name, email, phone
+        }
+        
+        const { id } = this.props.match.params;
+
+        const res = await axios.put(`https://jsonplaceholder.typicode.com/users/${id}`, updatedContact);
+
+        dispatch({type: 'UPDATE_CONTACT', payload: res.data });
         
         // Clearing the state after saving the data
         this.setState({

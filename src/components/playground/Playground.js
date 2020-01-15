@@ -27,7 +27,7 @@ class Playground extends Component {
     }
 
     getSnapshotBeforeUpdate(prevProps, prevState ) {
-
+        
     }
  
     render() {
